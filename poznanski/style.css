@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #ebe0d9, #c4d6d8);
+    z-index: -1;
+}
+#navbar{
+    display: grid;
+    grid-template-columns: 10% 1.5fr 1fr 1fr 1fr 1fr 10%;
+    overflow: hidden;
+    z-index: 100;
+    opacity: 0.5;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    
+}
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-left: 1px solid rgba(155, 154, 154, 0.726);
+    border-right: 1px solid  rgba(155, 154, 154, 0.726);
+    font-size: 24px;
+    color: white;
+  }
+  #navbar a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+#navbar a:active{
+    color: white;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.content {
+    padding: 16px;
+}
+
+#logo{
+    grid-column: 2/3;
+    font-size: 2rem;
+    border-right: 1px solid silver;
+  
+}
+
+
+section{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    
+}
+
+.hero{
+    height: 60%;
+    width: 100%;
+    position: relative;
+ 
+
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 2px rgba(201, 201, 201, 0.897);
+  
+}
+.headline{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);
+    color: white;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    z-index: 3;
+
+}
+.hero::after{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+#about{
+    background-image: url(./img/section.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 5rem;
+    
+}
+#about h1{
+    float: left;
+    margin: 30px;
+    padding: 15px;
+
+
+}
+.box{
+height: 75vh;
+width: 25vw;
+border: 1px solid white;
+position: absolute;
+transform: translateX(82%);
+
+}
+#gallery{
+    background: linear-gradient(to right, #f3eae4, #e6edee);
+}
+#work{
+    background-image: url(./img/warsztat.jpg);
+    background-repeat: no-repeat;
+    
+}
+.headl{
+    float: left;
+    width: 300px;
+    height: 200px;
+    font-size: 36px;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    border: 3px solid white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.reszta{
+    float: left;
+    width: 20vw;
+    font-size: 26px;
+    color: wheat;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
